@@ -33,7 +33,7 @@ header, main, footer {
 .block2 {
     background: #F5F5F5;
     border-radius: 10px;
-    padding: 140px 0;
+    padding: 140px 0 160px
 }
 
 .block2-content-block {
@@ -51,7 +51,8 @@ header, main, footer {
     background-repeat: no-repeat;
     background-position: center, bottom;
     overflow: hidden;
-    display: flex;
+    position: absolute;
+    top: 95px;
 }
 
 .img-block2 {
@@ -90,48 +91,38 @@ header, main, footer {
 }
 
 .block6 {
+}
+
+.block6-content-block {
     display: flex;
-    width: 1281px;
-    height: 358px;
     background: #F5F5F5;
     border-radius: 10px;
-    max-width: 1440px;
-    margin: 0 auto;
-    justify-content: space-between;
 }
 
 .block6-left {
-    width: 582px;
-    height: 358px;
-    margin-top: 80px;
-    margin-left: 40px;
+padding: 80px 12px 0 40px;
 }
 
 .block7 {
-    max-width: 1440px;
-    margin: 0 auto;
-    width: 1281px;
     margin-top: 80px;
 }
 
 .block7-top {
-    height: 47px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .block7-cards {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .block8 {
     max-width: 1440px;
     margin: 0 auto;
-    width: 1281px;
-    margin-top: 80px;
-    margin-bottom: 120px;
+    padding: 80px 0 120px 0;
 }
 
 .block8-top {
@@ -139,8 +130,6 @@ header, main, footer {
 }
 
 .block8-cards {
-    width: 1276px;
-    height: 384px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -170,9 +159,7 @@ header, main, footer {
     font-size: 32px;
     line-height: 42px;
     color: #000000;
-    margin-left: 35px;
-    margin-bottom: 20;
-    margin-top: -8px;
+    text-align: center;
 }
 
 .block8-p2 {
@@ -495,8 +482,6 @@ h1 {
 }
 
 .cards-navi {
-    width: 874px;
-    height: 732px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -753,4 +738,30 @@ color: #4200FF;
 
 .block7-top-vector {
     margin-left: 16px;
+}
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+
+    .navi {
+        display: none;
+    }
+
+    .header-content-blok {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-side {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 }
